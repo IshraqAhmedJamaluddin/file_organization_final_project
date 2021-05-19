@@ -22,6 +22,7 @@ namespace file_organization_final_project
         {
             try
             {
+                // You might need to add the driver (I removed it because it didn't work here)
                 Class1.filename = textBox1.Text + ".txt"; // Get the file name from user if I insert file1 in textbox1 ,filename= E:\\file1.txt
                 if (!File.Exists(Class1.filename)) // if the file does not exists 
                 {
@@ -63,7 +64,8 @@ namespace file_organization_final_project
         {
             try
             {
-                Class1.filename = " E:\\" + textBox1.Text + ".txt"; // Get the file name from user if I insert file1 in textbox1 ,filename= E:\\file1.txt
+                // You might need to add the driver (I removed it because it didn't work here)
+                Class1.filename = textBox1.Text + ".txt"; // Get the file name from user if I insert file1 in textbox1 ,filename= E:\\file1.txt
                 File.Delete(Class1.filename);
                 MessageBox.Show("File is Deleted");
             }
