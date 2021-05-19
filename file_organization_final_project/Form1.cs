@@ -67,6 +67,7 @@ namespace file_organization_final_project
                 // You might need to add the driver (I removed it because it didn't work here)
                 Class1.filename = textBox1.Text + ".txt"; // Get the file name from user if I insert file1 in textbox1 ,filename= E:\\file1.txt
                 File.Delete(Class1.filename);
+                label2.Visible = false;
                 MessageBox.Show("File is Deleted");
             }
             catch (Exception exception)
